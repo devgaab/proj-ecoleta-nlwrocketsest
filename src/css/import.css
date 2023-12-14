@@ -1,3 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@700&display=swap');
 
-@import './style.css';
+@import './base.css';
+@import './home.css';
+@import './responsive.css';
