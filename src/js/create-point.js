@@ -1,4 +1,4 @@
-
+// Formulário da entidade
 function populateUFs() {
     const ufSelect = document.querySelector("select[name=uf]");
 
@@ -40,3 +40,38 @@ function getCities(event) {
 };
 
 document.querySelector("select[name=uf]").addEventListener("change", getCities);
+
+// Itens de coleta
+const itensToCollect = document.querySelectorAll(".itens-grid li");
+
+for (const item of itensToCollect) {
+    item.addEventListener("click", handleSelectedItem)
+};
+
+const collectedItems = document.querySelector("input[name=itens]");
+
+let selectedItens = [];
+
+function handleSelectedItem(event) {
+    const itemLi = event.target;
+    itemLi.classList.toggle("selected");
+    const itemId = itemLi.dataset.id;
+
+    const alreadySelected = selectedItens.findIndex( item => {
+        const itemFoud = item == itemId;
+        return itemFoud;
+    });
+
+    if (alreadySelected >= 0) {
+        const filteredItems = selectedItens.filter( item => {
+            const itemIsDifferent = item != itemId;
+            return itemIsDifferent;
+        })
+
+        selectedItens = filteredItems
+    }else{
+        selectedItens.push(itemId);
+    }
+
+    collectedItems.value = selectedItens
+};

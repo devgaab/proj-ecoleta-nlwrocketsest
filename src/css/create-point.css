@@ -139,3 +139,8 @@ form button:hover {
     background-color: #e1face;
     border: 2px solid #34cb79;
 }
+
+.itens-grid li img,
+.itens-grid li span {
+    pointer-events: none;
+}
