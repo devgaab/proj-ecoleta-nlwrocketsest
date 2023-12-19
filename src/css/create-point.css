@@ -26,7 +26,7 @@
     height: 20px;
 }
 
-form {
+#page-create-point form {
     background-color: white;
     max-width: 730px;
     margin: 80px auto;
@@ -35,36 +35,36 @@ form {
     
 }
 
-form h1 {
+#page-create-point form h1 {
     font-size: 38px;
 }
 
-form fieldset {
+#page-create-point form fieldset {
     margin-top: 64px;
     border: 0;
 }
 
-form legend {
+#page-create-point form legend {
     margin-bottom: 40px;
 }
 
-form legend h2 {
+#page-create-point form legend h2 {
     font-size: 24px;
 }
 
-form .field {
+#page-create-point form .field {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
 }
 
-form .field-group {
+#page-create-point form .field-group {
     display: flex;
 }
 
-form input,
-form select {
+#page-create-point form input,
+#page-create-point form select {
     background-color: #f0f0f5;
     border: 0;
     padding: 16px 24px;
@@ -72,23 +72,23 @@ form select {
     border-radius: 8px;
 }
 
-form select {
+#page-create-point form select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-form label {
+#page-create-point form label {
     font-size: 14px;
     margin-bottom: 8px;
     color: #6C6C80;
 }
 
-form .field-group .field + .field {
+#page-create-point form .field-group .field + .field {
     margin-left: 24px;
 }
 
-form button {
+#page-create-point form button {
     width: 260px;
     height: 56px;
     background-color: var(--primary-color);
@@ -102,7 +102,7 @@ form button {
     transition: 400ms;
 }
 
-form button:hover {
+#page-create-point form button:hover {
     background-color: #2fb86e;
 }
 
