@@ -32,7 +32,7 @@
     margin: 80px auto;
     padding: 64px;
     border-radius: 8px;
-    
+
 }
 
 #page-create-point form h1 {
@@ -84,7 +84,7 @@
     color: #6C6C80;
 }
 
-#page-create-point form .field-group .field + .field {
+#page-create-point form .field-group .field+.field {
     margin-left: 24px;
 }
 
